@@ -7,13 +7,14 @@ export default makeStyles((theme) => ({
     padding: '10% 0',
   },
   image: {
-    width: '70%',
+    width: '85%',
+    margin: '20px',
   },
   links: {
     color: theme.palette.text.primary,
     textDecoration: 'none',
   },
-  genreImage: {
-    filter: theme.palette.mode === 'dark' ? 'dark' : 'invert(1)',
+  genreImages: {
+    filter: theme.palette.mode === 'dark' && 'invert(1)',
   },
 }));
