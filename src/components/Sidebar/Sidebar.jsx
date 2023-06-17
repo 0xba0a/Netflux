@@ -63,7 +63,7 @@ const Sidebar = ({ setMobileOpen }) => {
             <Box display="flex" justifyContent="center">
               <CircularProgress size="4rem" />
             </Box>
-          ) : data.genres.map(({ name, id }) => (
+          ) : data?.genres.map(({ name, id }) => (
             <Link key={name} className={classes.links} to="/">
               <ListItem onClick={() => dispatch(selectGenreOrCategory(id))} button>
                 <ListItemIcon>
